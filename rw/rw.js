@@ -71,7 +71,7 @@ var width = 500;
 var height = 500;
 var pad = 0;
 var left_pad = 0;
-var svg = d3.select("#graph")
+var svg = d3.select("#rw")
     .append("svg")
     .style("width", width)
     .style("height", height);
