@@ -67,8 +67,8 @@ var rw_move = function(data) {
 ////////////////////////////////////////////////////////////////////////////////
 // Actual drawing
 ////////////////////////////////////////////////////////////////////////////////
-var width = 500;
-var height = 500;
+var width = 100;
+var height = 100;
 var pad = 0;
 var left_pad = 0;
 var svg = d3.select("#rw")
@@ -76,8 +76,8 @@ var svg = d3.select("#rw")
     .style("width", width)
     .style("height", height);
 
-var n_x = 100;
-var n_y = 100;
+var n_x = 20;
+var n_y = 20;
 var x = d3.scale.linear()
     .domain([0, n_x])
     .range([pad, width - pad]);
@@ -90,8 +90,4 @@ draw(data);
 setInterval(function() {
     data = rw_move(data)
     update(data);
-    data = rw_move(data)
-    update(data);
-    data = rw_move(data)
-    update(data);
-}, 50)
+}, 100)
